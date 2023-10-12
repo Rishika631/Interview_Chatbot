@@ -1,0 +1,3834 @@
+{
+  "_version": "1.2",
+  "project": {
+    "_id": "64f65fb36babf2000798de22",
+    "name": "Learn Voiceflow",
+    "teamID": "bakdQ6OojJ",
+    "devVersion": "64f65fb379c13137308d7f78",
+    "platform": "webchat",
+    "type": "chat",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "members": [],
+    "linkType": "STRAIGHT",
+    "image": "https://cm4-production-assets.s3.amazonaws.com/1678870776608-chat-g28993ce74_1280.png",
+    "customThemes": [],
+    "apiPrivacy": "private",
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "knowledgeBase": {
+      "settings": {
+        "chunkStrategy": {
+          "type": "recursive_text_splitter",
+          "size": 1200,
+          "overlap": 200
+        },
+        "search": {
+          "limit": 3,
+          "metric": "IP"
+        },
+        "summarization": {
+          "prompt": "",
+          "mode": "prompt",
+          "model": "claude-v1",
+          "temperature": 0.1,
+          "system": "You are an FAQ AI chat assistant. Information will be provided to help answer the user's questions. Always summarize your response to be as brief as possible and be extremely concise. Your responses should be fewer than a couple of sentences.",
+          "maxTokens": 356
+        }
+      },
+      "documents": {
+        "64f7ba7a34f8fc0007083e27": {
+          "status": {
+            "type": "SUCCESS",
+            "data": null
+          },
+          "data": {
+            "type": "pdf",
+            "name": "RishikaAgrawal.pdf"
+          },
+          "updatedAt": "2023-09-05T23:32:10.414Z",
+          "creatorID": 192623,
+          "documentID": "64f7ba7a34f8fc0007083e27",
+          "s3ObjectRef": "64f65fb36babf2000798de22/RishikaAgrawal.pdf"
+        }
+      }
+    },
+    "_version": 1.2,
+    "updatedAt": "2023-09-06T01:34:56.603Z",
+    "creatorID": 192623,
+    "updatedBy": 192623,
+    "prototype": {
+      "nlp": {
+        "type": "VFNLU"
+      },
+      "lastTrainedTime": 1693962912435,
+      "trainedModel": {
+        "intents": [],
+        "slots": []
+      }
+    },
+    "liveVersion": "64f666cd6babf2000798de6b",
+    "createdAt": "2023-09-04T22:52:35.000Z"
+  },
+  "version": {
+    "_id": "64f65fb379c13137308d7f78",
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "counter",
+      "sentiment",
+      "reply",
+      "name",
+      "position",
+      "question_set",
+      "ques1",
+      "ans1",
+      "followup1",
+      "feedback1",
+      "ans2",
+      "ans3",
+      "feedback2",
+      "feedback3",
+      "feedback3_",
+      "feedback4",
+      "pos",
+      "final_rating",
+      "article",
+      "art",
+      "ans4"
+    ],
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "bzga3j4q",
+          "name": "Learn Button",
+          "inputs": [
+            {
+              "text": "how do I add a choice to the canvas",
+              "slots": []
+            },
+            {
+              "text": "how do I use the buttons step",
+              "slots": []
+            },
+            {
+              "text": "buttons step help",
+              "slots": []
+            },
+            {
+              "text": "how to use choice",
+              "slots": []
+            },
+            {
+              "text": "how do I give the user a choice",
+              "slots": []
+            },
+            {
+              "text": "how to use button",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "psac3o99",
+          "name": "Jump Here",
+          "inputs": [
+            {
+              "text": "jump here",
+              "slots": []
+            },
+            {
+              "text": "jump there please",
+              "slots": []
+            },
+            {
+              "text": "jump intent",
+              "slots": []
+            },
+            {
+              "text": "jump there",
+              "slots": []
+            },
+            {
+              "text": "jump",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "582pg3mye",
+          "name": "Learn Intents",
+          "inputs": [
+            {
+              "text": "learn about intents please",
+              "slots": []
+            },
+            {
+              "text": "i want to learn about intents",
+              "slots": []
+            },
+            {
+              "text": "intent learn",
+              "slots": []
+            },
+            {
+              "text": "intents learn",
+              "slots": []
+            },
+            {
+              "text": "learn intents",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "VF.YES",
+          "name": "VF.YES",
+          "inputs": [],
+          "slots": []
+        },
+        {
+          "key": "z8cn3985",
+          "name": "Tell me more",
+          "inputs": [
+            {
+              "text": "What else can you tell me?",
+              "slots": []
+            },
+            {
+              "text": "Can you give me more information?",
+              "slots": []
+            },
+            {
+              "text": "Do you have anything else to add?",
+              "slots": []
+            },
+            {
+              "text": "What else do you know?",
+              "slots": []
+            },
+            {
+              "text": "Go on.",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "a5uo39mw",
+          "name": "Launch Assistant",
+          "inputs": [
+            {
+              "text": "Launch my assistant",
+              "slots": []
+            },
+            {
+              "text": "connect assistant to website",
+              "slots": []
+            },
+            {
+              "text": "launch assistant",
+              "slots": []
+            },
+            {
+              "text": "put assistant on website",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "wb5tx3em8",
+          "name": "Response AI",
+          "inputs": [
+            {
+              "text": "gpt response",
+              "slots": []
+            },
+            {
+              "text": "new response step",
+              "slots": []
+            },
+            {
+              "text": "response ai",
+              "slots": []
+            },
+            {
+              "text": "response",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "re5xb3etn",
+          "name": "Set AI",
+          "inputs": [
+            {
+              "text": "GPT set",
+              "slots": []
+            },
+            {
+              "text": "set step",
+              "slots": []
+            },
+            {
+              "text": "set ai",
+              "slots": []
+            },
+            {
+              "text": "set",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "yvj733rd",
+          "name": "Learn Components",
+          "inputs": [
+            {
+              "text": "Learn components",
+              "slots": []
+            },
+            {
+              "text": "What components can I learn?",
+              "slots": []
+            },
+            {
+              "text": "What components do I need to know?",
+              "slots": []
+            },
+            {
+              "text": "Teach me about components",
+              "slots": []
+            },
+            {
+              "text": "Show me components",
+              "slots": []
+            },
+            {
+              "text": "Tell me about components",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "kvlc336b",
+          "name": "Learn Actions",
+          "inputs": [
+            {
+              "text": "Learn Actions",
+              "slots": []
+            },
+            {
+              "text": "What Actions Can I Learn",
+              "slots": []
+            },
+            {
+              "text": "How Do I Learn Actions",
+              "slots": []
+            },
+            {
+              "text": "Teach me about Actions",
+              "slots": []
+            },
+            {
+              "text": "What Can I Do with Actions",
+              "slots": []
+            },
+            {
+              "text": "Show me How to Work with Actions",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "sjcrv374u",
+          "name": "ChatGPT",
+          "inputs": [
+            {
+              "text": "how do i use AI in my assistant",
+              "slots": []
+            },
+            {
+              "text": "how do i use gpt in my assistant",
+              "slots": []
+            },
+            {
+              "text": "How do I use chatgpt in my assistant",
+              "slots": []
+            },
+            {
+              "text": "how do I use AI in my assistant?",
+              "slots": []
+            },
+            {
+              "text": "how do I use GPT in my assistant?",
+              "slots": []
+            },
+            {
+              "text": "How do I use ChatGPT in my assistant?",
+              "slots": []
+            },
+            {
+              "text": "What is the quickest way to incorporate AI in my assistant?",
+              "slots": []
+            },
+            {
+              "text": "What is the best way to use GPT in my assistant?",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "oag9e37z2",
+          "name": "Learn the basics",
+          "inputs": [
+            {
+              "text": "Teach me the basics",
+              "slots": []
+            },
+            {
+              "text": "I want to learn the basics",
+              "slots": []
+            },
+            {
+              "text": "learn the basics",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "None",
+          "name": "None",
+          "inputs": [],
+          "slots": []
+        },
+        {
+          "key": "v62al3ieu",
+          "name": "No",
+          "inputs": [],
+          "slots": []
+        },
+        {
+          "key": "2j8jo3i58",
+          "name": "End",
+          "inputs": [],
+          "slots": []
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ]
+      },
+      "publishing": {
+        "avatar": "https://cdn.voiceflow.com/assets/logo.png",
+        "color": "#2E7FF1",
+        "description": "Our virtual assistant is here to help you.",
+        "image": "https://cdn.voiceflow.com/assets/logo.png",
+        "persistence": "localStorage",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "Learn Voiceflow - Webchat",
+        "watermark": true,
+        "feedback": false
+      },
+      "platform": "webchat"
+    },
+    "_version": 4.07,
+    "name": "Initial Version",
+    "projectID": "64f65fb36babf2000798de22",
+    "manualSave": false,
+    "autoSaveFromRestore": false,
+    "topics": [
+      {
+        "sourceID": "64f65fb379c13137308d7f79",
+        "type": "DIAGRAM"
+      }
+    ],
+    "components": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "64f65fb379c13137308d7f7e"
+      }
+    ],
+    "rootDiagramID": "64f65fb379c13137308d7f79",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "64f65fb379c13137308d7f79"
+        ],
+        "rootDiagramID": "64f65fb379c13137308d7f79",
+        "updatedAt": "2023-09-06T01:25:41.123Z",
+        "updatedBy": 192623
+      }
+    ],
+    "canvasTemplates": [
+      {
+        "id": "241hk37ge",
+        "name": "API Call Example",
+        "color": null,
+        "nodeIDs": [
+          "645d80c1f245951e8730bed8",
+          "645d80c1f245951e8730beda",
+          "645d80c1f245951e8730bedc",
+          "645d80c1f245951e8730bede"
+        ]
+      },
+      {
+        "id": "182hc3795",
+        "name": "Basic Conversation Path",
+        "color": null,
+        "nodeIDs": [
+          "645d80e3f245951e8730bfab",
+          "645d80e3f245951e8730bfad",
+          "645d80e3f245951e8730bfaf"
+        ]
+      },
+      {
+        "id": "9d35p376e",
+        "name": "Save Information",
+        "color": "#5b9fd7",
+        "nodeIDs": [
+          "645d810df245951e8730c06f",
+          "645d810df245951e8730c071",
+          "645d810df245951e8730c073",
+          "645d810df245951e8730c075"
+        ]
+      }
+    ],
+    "creatorID": 192623,
+    "templateDiagramID": "64f65fb379c13137308d7f7f",
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "Learn Voiceflow",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "programID": "64f65fb379c13137308d7f79",
+            "storage": {},
+            "variables": {},
+            "diagramID": "64f65fb379c13137308d7f79"
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "slotsMap": {},
+        "extraSlots": [],
+        "extraIntents": [],
+        "usedIntentsSet": [],
+        "platform": "webchat",
+        "goToIntentsSet": [],
+        "products": {},
+        "interfaces": [],
+        "permissions": [],
+        "usedEventsSet": []
+      },
+      "settings": {
+        "layout": "voice-and-dialog",
+        "buttonsOnly": false
+      },
+      "platform": "webchat"
+    }
+  },
+  "diagrams": {
+    "64f65fb379c13137308d7f79": {
+      "_id": "64f65fb379c13137308d7f79",
+      "offsetX": 291.5574934542947,
+      "offsetY": -14.648162520762583,
+      "zoom": 100,
+      "variables": [],
+      "name": "Start Here 🚀",
+      "versionID": "64f65fb379c13137308d7f78",
+      "creatorID": 192623,
+      "modified": 1693867955,
+      "intentStepIDs": [],
+      "type": "TOPIC",
+      "menuNodeIDs": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "nodes": {
+        "start00000000000000000000": {
+          "nodeID": "start00000000000000000000",
+          "type": "start",
+          "coords": [
+            171.2113454903215,
+            156.94701807031853
+          ],
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [
+              "64f6614c6e92d3fcdbfdb4a8"
+            ],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "64f660796e92d3fcdbfdb47e",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          235.86,
+                          178.95
+                        ]
+                      },
+                      {
+                        "point": [
+                          284.81,
+                          178.95
+                        ]
+                      },
+                      {
+                        "point": [
+                          284.81,
+                          114.71
+                        ]
+                      },
+                      {
+                        "point": [
+                          333.76,
+                          114.71
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          }
+        },
+        "64f660636e92d3fcdbfdb477": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "1shn3ny1",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hello this is an interview bot"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "v06pz3n67",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hi this is an interview bot"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "v16q03nmi",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Good day this is an interview bot"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "v16q13n0x",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Greetings this is an interview bot"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f660636e92d3fcdbfdb478"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f660636e92d3fcdbfdb477"
+        },
+        "64f660796e92d3fcdbfdb47e": {
+          "type": "block",
+          "data": {
+            "name": "New Block 2",
+            "steps": [
+              "64f660636e92d3fcdbfdb477",
+              "64f7bb9e6e0e347a2abc02a5",
+              "64f7bbb56e0e347a2abc02a9"
+            ]
+          },
+          "nodeID": "64f660796e92d3fcdbfdb47e",
+          "coords": [
+            498.7596473621137,
+            87.70967085885637
+          ]
+        },
+        "64f6613b6e92d3fcdbfdb4a2": {
+          "type": "exit",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f6613b6e92d3fcdbfdb4a2"
+        },
+        "64f6613b6e92d3fcdbfdb4a3": {
+          "type": "block",
+          "data": {
+            "name": "New Block 2",
+            "steps": [
+              "64f6613b6e92d3fcdbfdb4a2"
+            ]
+          },
+          "nodeID": "64f6613b6e92d3fcdbfdb4a3",
+          "coords": [
+            -138.63995983712834,
+            431.181065440988
+          ]
+        },
+        "64f6614c6e92d3fcdbfdb4a8": {
+          "type": "command",
+          "data": {
+            "name": "Deprecated Block",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f6614c6e92d3fcdbfdb4a8"
+        },
+        "64f7aa7c6e92d3fcdbfdb8b8": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "6i6rt3n1r",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Please provide your resume for interview in the knowledge base of website to start the interview if resume not yet provided"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "1e6se3na6",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Kindly submit your resume for the interview to begin."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7aa7c6e92d3fcdbfdb8b9"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7aa7c6e92d3fcdbfdb8b8",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "64f7ac8c6e92d3fcdbfdb8ea": {
+          "type": "api",
+          "data": {
+            "name": "",
+            "url": "https://api.voiceflow.com/v3alpha/knowledge-base/docs/upload",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [
+              {
+                "key": "maxChunkSize",
+                "val": "1000"
+              }
+            ],
+            "method": "POST",
+            "headers": [
+              {
+                "key": "Authorization",
+                "val": "Bearer VF.DM.64f667a901d455000744a813.WmWrXOuOC0mRM1bJ"
+              },
+              {
+                "key": "Content-Type",
+                "val": "multipart/form-data"
+              }
+            ],
+            "content": "",
+            "mappings": [],
+            "bodyType": "formData",
+            "selectedAction": "Make a POST Request",
+            "selectedIntegration": "Custom API",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7ac8c6e92d3fcdbfdb8eb"
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "64f7ac8c6e92d3fcdbfdb8ec"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7ac8c6e92d3fcdbfdb8ea"
+        },
+        "64f7ac8c6e92d3fcdbfdb8ed": {
+          "type": "block",
+          "data": {
+            "name": "New Block 3",
+            "steps": [
+              "64f7ac8c6e92d3fcdbfdb8ea"
+            ]
+          },
+          "nodeID": "64f7ac8c6e92d3fcdbfdb8ed",
+          "coords": [
+            2698.022835941095,
+            -358.86903487506504
+          ]
+        },
+        "64f7bb4e6e0e347a2abc02a0": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "sw2cs3if6",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Let's start the interview"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "gk2dj3idd",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Let's begin the interview"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "gk2dk3ito",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Let's kick off the interview"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "gk2dl3ioc",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Let's commence the interview"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "64f7bcc56e0e347a2abc02f3",
+                  "id": "64f7bb4e6e0e347a2abc02a1",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7bb4e6e0e347a2abc02a0"
+        },
+        "64f7bb9e6e0e347a2abc02a5": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "102eu3ifc",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Please provide your full name"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "372fd3ig2",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Please enter your full name"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7bb9e6e0e347a2abc02a6"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7bb9e6e0e347a2abc02a5"
+        },
+        "64f7bbb56e0e347a2abc02a9": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "name"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "64f7bbb56e0e347a2abc02ac",
+                  "id": "64f7bbb56e0e347a2abc02aa",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          665.16,
+                          364.06
+                        ]
+                      },
+                      {
+                        "point": [
+                          713.64,
+                          364.06
+                        ]
+                      },
+                      {
+                        "point": [
+                          713.64,
+                          98.83
+                        ]
+                      },
+                      {
+                        "point": [
+                          762.12,
+                          98.83
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "64f7bbb56e0e347a2abc02ab"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7bbb56e0e347a2abc02a9",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "64f7bbb56e0e347a2abc02ac": {
+          "type": "block",
+          "data": {
+            "name": "New Block 3",
+            "steps": [
+              "64f7bbe66e0e347a2abc02c6",
+              "64f7bc2d6e0e347a2abc02d2"
+            ],
+            "color": ""
+          },
+          "nodeID": "64f7bbb56e0e347a2abc02ac",
+          "coords": [
+            927.1168024144633,
+            71.83413540615032
+          ]
+        },
+        "64f7bbe66e0e347a2abc02c6": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "ix2jq3i18",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Please enter the job position you are looking for?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "5j2nz3i2i",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Please enter the job position you are seeking?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7bbe66e0e347a2abc02c7"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7bbe66e0e347a2abc02c6",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "64f7bc2d6e0e347a2abc02d2": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "position"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "64f7aa7c6e92d3fcdbfdb8b8",
+                  "id": "64f7bc2d6e0e347a2abc02d3",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1093.52,
+                          283.43
+                        ]
+                      },
+                      {
+                        "point": [
+                          1142.25,
+                          283.43
+                        ]
+                      },
+                      {
+                        "point": [
+                          1142.25,
+                          141.7
+                        ]
+                      },
+                      {
+                        "point": [
+                          1190.98,
+                          141.7
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "64f7bc2d6e0e347a2abc02d4"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7bc2d6e0e347a2abc02d2",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "64f7bc2d6e0e347a2abc02d5": {
+          "type": "block",
+          "data": {
+            "name": "New Block 5",
+            "steps": [
+              "64f7aa7c6e92d3fcdbfdb8b8",
+              "64f7bb4e6e0e347a2abc02a0"
+            ]
+          },
+          "nodeID": "64f7bc2d6e0e347a2abc02d5",
+          "coords": [
+            1357.3814967154042,
+            62.60166204865805
+          ]
+        },
+        "64f7bcc56e0e347a2abc02f3": {
+          "type": "block",
+          "data": {
+            "name": "New Block 6",
+            "steps": [
+              "64f7bcf86e0e347a2abc0324",
+              "64f7c70e6e0e347a2abc04ba"
+            ],
+            "color": ""
+          },
+          "nodeID": "64f7bcc56e0e347a2abc02f3",
+          "coords": [
+            1755.2785381668177,
+            85.04713618181458
+          ]
+        },
+        "64f7bcf86e0e347a2abc0324": {
+          "type": "generative",
+          "data": {
+            "name": "Response AI",
+            "mode": "memory_prompt",
+            "prompt": "please carefully analyze the resume document in knowledge base, and based on their qualifications generate one insightful and tailored questions that would help us better understand their background and suitability for the \n{{[position].position}} within our organization. Ensure that the questions probe into their past achievements, expertise, and any relevant certifications or training",
+            "system": "",
+            "maxTokens": 128,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7bcf86e0e347a2abc0325",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            },
+            "source": "knowledge_base"
+          },
+          "nodeID": "64f7bcf86e0e347a2abc0324"
+        },
+        "64f7c1b86e0e347a2abc03dd": {
+          "type": "block",
+          "data": {
+            "name": "New Block 6",
+            "color": "",
+            "steps": [
+              "64f7c1b86e0e347a2abc03df",
+              "64f7cd6b6e0e347a2abc072d"
+            ]
+          },
+          "nodeID": "64f7c1b86e0e347a2abc03dd",
+          "coords": [
+            2137.1963540884526,
+            72.10527462698181
+          ]
+        },
+        "64f7c1b86e0e347a2abc03df": {
+          "type": "generative",
+          "data": {
+            "name": "Response AI",
+            "mode": "memory_prompt",
+            "prompt": "please analyze the resume document in the knowledge base and ask one insightful question that will help us better understand {{[name].name}}'s background, qualifications, and suitability for the {{[position].position}} within our organization. The question should focus on their past achievements, expertise, and any relevant certifications or training. skills and acheivements. Ask the question directly without any message like \" suggested question or something\" just ask the question from thebackground, qualifications mentioned in the document in knowledge base as a response to the prompt",
+            "system": "",
+            "maxTokens": 128,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "source": "knowledge_base",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7c1b86e0e347a2abc03e0",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          2303.6,
+                          387.71
+                        ]
+                      },
+                      {
+                        "point": [
+                          2428.93,
+                          387.71
+                        ]
+                      },
+                      {
+                        "point": [
+                          2428.93,
+                          843.37
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7c1b86e0e347a2abc03df"
+        },
+        "64f7c1e96e0e347a2abc03e8": {
+          "type": "block",
+          "data": {
+            "name": "New Block 6",
+            "color": "",
+            "steps": [
+              "64f7c1e96e0e347a2abc03ea",
+              "64f7cd8b6e0e347a2abc0734"
+            ]
+          },
+          "nodeID": "64f7c1e96e0e347a2abc03e8",
+          "coords": [
+            2533.19754253728,
+            124.93532310452883
+          ]
+        },
+        "64f7c1e96e0e347a2abc03ea": {
+          "type": "generative",
+          "data": {
+            "name": "Response AI",
+            "mode": "memory_prompt",
+            "prompt": "please carefully analyze the resume document in knowledge base, and based on their, and skills and acheivements generate one insightful and tailored questions that would help us better understand their background and suitability for the \n{{[position].position}} within our organization. Ensure that the questions probe into their past achievements, expertise, and any relevant certifications or training. Ask the question directly without any message like \" suggested question or something\" just ask the question from the skills and acheivements mentioned in the document in knowledge base as a response to the prompt",
+            "system": "",
+            "maxTokens": 128,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "source": "knowledge_base",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7c1e96e0e347a2abc03eb",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          2699.6,
+                          463.04
+                        ]
+                      },
+                      {
+                        "point": [
+                          2897.27,
+                          463.04
+                        ]
+                      },
+                      {
+                        "point": [
+                          2897.27,
+                          913.65
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7c1e96e0e347a2abc03ea"
+        },
+        "64f7c2216e0e347a2abc03f3": {
+          "type": "block",
+          "data": {
+            "name": "New Block 6",
+            "color": "",
+            "steps": [
+              "64f7c2216e0e347a2abc03f5",
+              "64f7d4086e0e347a2abc086f"
+            ]
+          },
+          "nodeID": "64f7c2216e0e347a2abc03f3",
+          "coords": [
+            3028.136643063132,
+            133.79994993816564
+          ]
+        },
+        "64f7c2216e0e347a2abc03f5": {
+          "type": "generative",
+          "data": {
+            "name": "Response AI",
+            "mode": "memory_prompt",
+            "prompt": "please carefully analyze the resume document in knowledge base, and based on their projects, ask one insightful and tailored questions that would help us better understand their background and suitability for the \n{{[position].position}} within our organization. Ensure that the questions probe into their past achievements, expertise, and any relevant certifications or training which is not asked yet. Ask the question directly without any message like \" suggested question or something\" just ask the question from the projects mentioned in the document in knowledge base as a response to the prompt",
+            "system": "",
+            "maxTokens": 128,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "source": "knowledge_base",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7c2216e0e347a2abc03f6",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7c2216e0e347a2abc03f5"
+        },
+        "64f7c4bd6e0e347a2abc0403": {
+          "type": "ai_set",
+          "data": {
+            "name": "AI Set",
+            "label": "final report",
+            "sets": [
+              {
+                "mode": "memory_prompt",
+                "prompt": "calculate the final rating for the candidate's overall performance based on {{[feedback1].feedback1}}{{[feedback2].feedback2}} {{[feedback3].feedback3}} {{[feedback4].feedback4}} ",
+                "variable": "final_rating"
+              }
+            ],
+            "system": "",
+            "maxTokens": 128,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7c4bd6e0e347a2abc0404"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7c4bd6e0e347a2abc0403"
+        },
+        "64f7c4bd6e0e347a2abc0405": {
+          "type": "block",
+          "data": {
+            "name": "New Block 10",
+            "steps": [
+              "64f7ceb66e0e347a2abc073b",
+              "64f7cee76e0e347a2abc073f",
+              "64f7cefc6e0e347a2abc0743",
+              "64f7c4bd6e0e347a2abc0403",
+              "64f7cfdf6e0e347a2abc074b",
+              "64f7cffd6e0e347a2abc0756",
+              "64f7d3986e0e347a2abc0865",
+              "64f7d18e6e0e347a2abc0799",
+              "64f7d1756e0e347a2abc0790"
+            ]
+          },
+          "nodeID": "64f7c4bd6e0e347a2abc0405",
+          "coords": [
+            4022.5029837681504,
+            241.6121859069668
+          ]
+        },
+        "64f7c6056e0e347a2abc04b0": {
+          "type": "ai_set",
+          "data": {
+            "name": "AI Set",
+            "label": "question 1",
+            "sets": [
+              {
+                "mode": "memory_prompt",
+                "prompt": "You are a skeptical and brilliant recruiter questioning a candidate for a role at your company.  Your job is to reveal the strengths and weaknesses of the candidate. Using the STAR method, what is the most insightful follow up question you could ask them at this point in response to their answer to the last question asked, paying particular attention to what the question is trying to probe?  Put your follow up question in ques1. ",
+                "variable": "ques1"
+              }
+            ],
+            "system": "",
+            "maxTokens": 246,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7c6056e0e347a2abc04b1"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7c6056e0e347a2abc04b0"
+        },
+        "64f7c6056e0e347a2abc04b2": {
+          "type": "block",
+          "data": {
+            "name": "New Block 11",
+            "steps": [
+              "64f7c6056e0e347a2abc04b0",
+              "64f7c78e6e0e347a2abc056b",
+              "64f7c9ab6e0e347a2abc0576"
+            ]
+          },
+          "nodeID": "64f7c6056e0e347a2abc04b2",
+          "coords": [
+            1690.9463540884526,
+            709.9470180703184
+          ]
+        },
+        "64f7c70e6e0e347a2abc04ba": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "ans1"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "64f7c6056e0e347a2abc04b2",
+                  "id": "64f7c70e6e0e347a2abc04bb",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1588.88,
+                          494.9
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          1564.88,
+                          494.9
+                        ]
+                      },
+                      {
+                        "point": [
+                          1564.88,
+                          602.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          1690.95,
+                          602.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          1690.95,
+                          709.95
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "64f7c70e6e0e347a2abc04bc"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7c70e6e0e347a2abc04ba",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "64f7c78e6e0e347a2abc056b": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "2y5pn3iji",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": " "
+                      },
+                      {
+                        "id": "ques1",
+                        "name": "ques1",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7c78e6e0e347a2abc056c"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7c78e6e0e347a2abc056b"
+        },
+        "64f7c9ab6e0e347a2abc0576": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "followup1"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "64f7c9c06e0e347a2abc057e",
+                  "id": "64f7c9ab6e0e347a2abc0577",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1857.35,
+                          921.55
+                        ]
+                      },
+                      {
+                        "point": [
+                          1932.31,
+                          921.55
+                        ]
+                      },
+                      {
+                        "point": [
+                          1932.31,
+                          1113.55
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "64f7c9ab6e0e347a2abc0578"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7c9ab6e0e347a2abc0576",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "64f7c9c06e0e347a2abc057c": {
+          "type": "ai_set",
+          "data": {
+            "name": "AI Set",
+            "label": "feedback1",
+            "sets": [
+              {
+                "mode": "memory_prompt",
+                "prompt": "You are a star recruitment analyst.  Please rate the candidate's response to the first question on a scale of 1 to 10, with 10 being the highest. Provide your rating as 'rating1' for candidate's response {{[ans1].ans1}} and {{[followup1].followup1}} to the 1st question and it's follow-up question .Afterward, share concise feedback for each rating, highlighting what the candidate did well and areas for improvement in their answers",
+                "variable": "feedback1"
+              }
+            ],
+            "system": "",
+            "maxTokens": 128,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7c9c06e0e347a2abc057d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7c9c06e0e347a2abc057c"
+        },
+        "64f7c9c06e0e347a2abc057e": {
+          "type": "block",
+          "data": {
+            "name": "New Block 12",
+            "steps": [
+              "64f7c9c06e0e347a2abc057c",
+              "64f7cafc6e0e347a2abc0586"
+            ]
+          },
+          "nodeID": "64f7c9c06e0e347a2abc057e",
+          "coords": [
+            1932.3133111927723,
+            1113.552694946682
+          ]
+        },
+        "64f7cafc6e0e347a2abc0586": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "496os3iek",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "feedback1",
+                        "name": "feedback1",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "64f7c1b86e0e347a2abc03df",
+                  "id": "64f7cafc6e0e347a2abc0587",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          2098.71,
+                          1253.4
+                        ]
+                      },
+                      {
+                        "point": [
+                          2122.71,
+                          1253.4
+                        ]
+                      },
+                      {
+                        "point": [
+                          2122.71,
+                          702.3
+                        ]
+                      },
+                      {
+                        "point": [
+                          1946.8,
+                          702.3
+                        ]
+                      },
+                      {
+                        "point": [
+                          1946.8,
+                          151.21
+                        ]
+                      },
+                      {
+                        "point": [
+                          1970.8,
+                          151.21
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7cafc6e0e347a2abc0586"
+        },
+        "64f7ccea6e0e347a2abc06fb": {
+          "type": "block",
+          "data": {
+            "name": "New Block 12",
+            "color": "",
+            "steps": [
+              "64f7ccea6e0e347a2abc06fd",
+              "64f7ccea6e0e347a2abc0700"
+            ]
+          },
+          "nodeID": "64f7ccea6e0e347a2abc06fb",
+          "coords": [
+            2428.927149779258,
+            843.3669094725735
+          ]
+        },
+        "64f7ccea6e0e347a2abc06fd": {
+          "type": "ai_set",
+          "data": {
+            "name": "AI Set",
+            "label": "feedback2",
+            "sets": [
+              {
+                "mode": "memory_prompt",
+                "prompt": "You are a star recruitment analyst.  Please rate the candidate's response to the first question on a scale of 1 to 10, with 10 being the highest. Provide your rating as 'rating2' for candidate's response {{[ans2].ans2}} to the 2nd question and it's follow-up question .Afterward, share concise feedback for each rating, highlighting what the candidate did well and areas for improvement in their answers",
+                "variable": "feedback2"
+              }
+            ],
+            "system": "",
+            "maxTokens": 128,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7ccea6e0e347a2abc06fe"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7ccea6e0e347a2abc06fd"
+        },
+        "64f7ccea6e0e347a2abc0700": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "496os3iek",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "feedback2",
+                        "name": "feedback2",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "64f7c1e96e0e347a2abc03ea",
+                  "id": "64f7ccea6e0e347a2abc0701",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          2595.33,
+                          983.22
+                        ]
+                      },
+                      {
+                        "point": [
+                          2723.6,
+                          983.22
+                        ]
+                      },
+                      {
+                        "point": [
+                          2723.6,
+                          204.04
+                        ]
+                      },
+                      {
+                        "point": [
+                          2699.6,
+                          204.04
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7ccea6e0e347a2abc0700"
+        },
+        "64f7cd056e0e347a2abc070c": {
+          "type": "block",
+          "data": {
+            "name": "New Block 12",
+            "color": "",
+            "steps": [
+              "64f7cd056e0e347a2abc070e",
+              "64f7cd056e0e347a2abc0711"
+            ]
+          },
+          "nodeID": "64f7cd056e0e347a2abc070c",
+          "coords": [
+            2897.2680865174684,
+            913.6537015801935
+          ]
+        },
+        "64f7cd056e0e347a2abc070e": {
+          "type": "ai_set",
+          "data": {
+            "name": "AI Set",
+            "label": "feedback3",
+            "sets": [
+              {
+                "mode": "memory_prompt",
+                "prompt": "You are a star recruitment analyst.  Please rate the candidate's response to the first question on a scale of 1 to 10, with 10 being the highest. Provide your rating as 'rating3' for candidate's response {{[ans3].ans3}} to the 3rd question and it's follow-up question .Afterward, share concise feedback for each rating, highlighting what the candidate did well and areas for improvement in their answers",
+                "variable": "feedback3"
+              }
+            ],
+            "system": "",
+            "maxTokens": 128,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7cd056e0e347a2abc070f"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7cd056e0e347a2abc070e"
+        },
+        "64f7cd056e0e347a2abc0711": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "496os3iek",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "feedback3",
+                        "name": "feedback3",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "64f7c2216e0e347a2abc03f5",
+                  "id": "64f7cd056e0e347a2abc0712",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7cd056e0e347a2abc0711"
+        },
+        "64f7cd236e0e347a2abc071d": {
+          "type": "block",
+          "data": {
+            "name": "New Block 12",
+            "color": "",
+            "steps": [
+              "64f7cd236e0e347a2abc071f",
+              "64f7cd236e0e347a2abc0722"
+            ]
+          },
+          "nodeID": "64f7cd236e0e347a2abc071d",
+          "coords": [
+            3590.0425090853532,
+            723.8303081447224
+          ]
+        },
+        "64f7cd236e0e347a2abc071f": {
+          "type": "ai_set",
+          "data": {
+            "name": "AI Set",
+            "label": "feedback4",
+            "sets": [
+              {
+                "mode": "memory_prompt",
+                "prompt": "You are a star recruitment analyst.  Please rate the candidate's response to the first question on a scale of 1 to 10, with 10 being the highest. Provide your rating as 'rating4' for candidate's response {{[ans4].ans4}} to the 4th question and it's follow-up question .Afterward, share concise feedback for each rating, highlighting what the candidate did well and areas for improvement in their answers",
+                "variable": "feedback4"
+              }
+            ],
+            "system": "",
+            "maxTokens": 128,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7cd236e0e347a2abc0720"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7cd236e0e347a2abc071f"
+        },
+        "64f7cd236e0e347a2abc0722": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "496os3iek",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "feedback4",
+                        "name": "feedback4",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "64f7c4bd6e0e347a2abc0405",
+                  "id": "64f7cd236e0e347a2abc0723",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7cd236e0e347a2abc0722"
+        },
+        "64f7cd6b6e0e347a2abc072d": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "ans2"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "64f7ccea6e0e347a2abc06fd",
+                  "id": "64f7cd6b6e0e347a2abc072e",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          2303.6,
+                          639.46
+                        ]
+                      },
+                      {
+                        "point": [
+                          2327.6,
+                          639.46
+                        ]
+                      },
+                      {
+                        "point": [
+                          2327.6,
+                          780.96
+                        ]
+                      },
+                      {
+                        "point": [
+                          2238.53,
+                          780.96
+                        ]
+                      },
+                      {
+                        "point": [
+                          2238.53,
+                          922.47
+                        ]
+                      },
+                      {
+                        "point": [
+                          2262.53,
+                          922.47
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "64f7cd6b6e0e347a2abc072f"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7cd6b6e0e347a2abc072d",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "64f7cd8b6e0e347a2abc0734": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "ans3"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "64f7cd056e0e347a2abc070c",
+                  "id": "64f7cd8b6e0e347a2abc0735",
+                  "data": {}
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "64f7cd8b6e0e347a2abc0736"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7cd8b6e0e347a2abc0734"
+        },
+        "64f7ceb66e0e347a2abc073b": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "qq7zh3iop",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "******Final Report******"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7ceb66e0e347a2abc073c"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7ceb66e0e347a2abc073b"
+        },
+        "64f7cee76e0e347a2abc073f": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "2r80v3ipf",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Name: {name}"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7cee76e0e347a2abc0740"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7cee76e0e347a2abc073f"
+        },
+        "64f7cefc6e0e347a2abc0743": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "hy81q3ih5",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Position: "
+                      },
+                      {
+                        "id": "position",
+                        "name": "position",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": "  "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7cefc6e0e347a2abc0744"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7cefc6e0e347a2abc0743"
+        },
+        "64f7cfdf6e0e347a2abc074b": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "gi85q3if4",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Final score: "
+                      },
+                      {
+                        "id": "final_rating",
+                        "name": "final_rating",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7cfdf6e0e347a2abc074c"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7cfdf6e0e347a2abc074b"
+        },
+        "64f7cffd6e0e347a2abc0756": {
+          "type": "ai_set",
+          "data": {
+            "name": "AI Set",
+            "label": "Detailed feedback",
+            "sets": [
+              {
+                "mode": "memory_prompt",
+                "prompt": "You are a top recruitment analysis.  Write a candid and detailed report in plain text on the candidate, carefully and ruthlessly detailing their strengths and weaknesses and recommendation as to whether we continue the process with them or not based on the whole interview transcript memory.   Store the entire article in the variable called \"article\"",
+                "variable": "article"
+              }
+            ],
+            "system": "",
+            "maxTokens": 128,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7cffd6e0e347a2abc0757"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7cffd6e0e347a2abc0756"
+        },
+        "64f7d1756e0e347a2abc0790": {
+          "type": "exit",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7d1756e0e347a2abc0790"
+        },
+        "64f7d18e6e0e347a2abc0799": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "6w8ng3ifm",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Thank you for taking this interview! All the best !!"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7d18e6e0e347a2abc079a"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7d18e6e0e347a2abc0799"
+        },
+        "64f7d3986e0e347a2abc0865": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "q99dz3ibp",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Detailed Feedback:  "
+                      },
+                      {
+                        "id": "article",
+                        "name": "article",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "64f7d3986e0e347a2abc0866"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7d3986e0e347a2abc0865"
+        },
+        "64f7d4086e0e347a2abc086f": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "ans4"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "64f7cd236e0e347a2abc071d",
+                  "id": "64f7d4086e0e347a2abc0870",
+                  "data": {}
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "64f7d4086e0e347a2abc0871"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "64f7d4086e0e347a2abc086f"
+        }
+      },
+      "diagramID": "64f65fb379c13137308d7f79"
+    },
+    "64f65fb379c13137308d7f7e": {
+      "_id": "64f65fb379c13137308d7f7e",
+      "name": "First Component 🦄",
+      "type": "COMPONENT",
+      "zoom": 100,
+      "offsetX": 169.60000000000002,
+      "offsetY": 100,
+      "modified": 1693867956,
+      "variables": [],
+      "menuNodeIDs": [],
+      "intentStepIDs": [],
+      "creatorID": 192623,
+      "versionID": "64f65fb379c13137308d7f78",
+      "menuItems": [],
+      "nodes": {
+        "6303cb8880506fa6a1cfca21": {
+          "nodeID": "6303cb8880506fa6a1cfca21",
+          "type": "start",
+          "coords": [
+            488,
+            125
+          ],
+          "data": {
+            "name": "Start",
+            "color": "#2b2f32",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6303cb7780506fa6a1cfca1b",
+                  "id": "6303cb8880506fa6a1cfca22",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          590.2352447509766,
+                          146.99648475646973
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          689.9999389648438,
+                          146.99999237060547
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "steps": []
+          }
+        },
+        "6303cb7780506fa6a1cfca1b": {
+          "type": "block",
+          "data": {
+            "name": "First block",
+            "color": "",
+            "steps": [
+              "6303cb7780506fa6a1cfca19",
+              "6303ec67d77f5c5fe61d9822"
+            ]
+          },
+          "nodeID": "6303cb7780506fa6a1cfca1b",
+          "coords": [
+            855,
+            120
+          ]
+        },
+        "6303cb7780506fa6a1cfca19": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "e41ao3ogi",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "This is a component!"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6303cb7780506fa6a1cfca1a"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6303cb7780506fa6a1cfca19"
+        },
+        "6303ec67d77f5c5fe61d9822": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "ysfd3oxi",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Components are centrally managed across your project. If you modify whats inside, it will update across your project."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6303ec99d77f5c5fe61d9829",
+                  "id": "6303ec67d77f5c5fe61d9823",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1021.0035916084747,
+                          293.94098415169304
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1073.6548384132534,
+                          293.94098415169304
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1073.6548384132534,
+                          141.2867013238166
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1126.306085218032,
+                          141.2867013238166
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6303ec67d77f5c5fe61d9822"
+        },
+        "6303ec99d77f5c5fe61d9827": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "ytg43otg",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Think about a component like a sub-folder. Once it ends, it continues where it left off in the topic you were in before."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6303ec99d77f5c5fe61d9828"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6303ec99d77f5c5fe61d9827"
+        },
+        "6303ec99d77f5c5fe61d9829": {
+          "type": "block",
+          "data": {
+            "name": "Exiting a Component",
+            "steps": [
+              "6303ec99d77f5c5fe61d9827"
+            ],
+            "color": ""
+          },
+          "nodeID": "6303ec99d77f5c5fe61d9829",
+          "coords": [
+            1291.3061010981978,
+            114.2867013238166
+          ]
+        }
+      },
+      "diagramID": "64f65fb379c13137308d7f7e"
+    },
+    "64f65fb379c13137308d7f7f": {
+      "_id": "64f65fb379c13137308d7f7f",
+      "name": "Template Diagram",
+      "type": "TEMPLATE",
+      "zoom": 100,
+      "offsetX": 272,
+      "offsetY": 104,
+      "modified": 1693867956,
+      "variables": [],
+      "menuItems": [],
+      "creatorID": 192623,
+      "versionID": "64f65fb379c13137308d7f78",
+      "nodes": {
+        "645d80c123f803000781bab8": {
+          "type": "start",
+          "nodeID": "645d80c123f803000781bab8",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "Start",
+            "color": "#43494E",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "id": "645d80c123f803000781bab9",
+                  "type": "next",
+                  "target": null
+                }
+              },
+              "dynamic": []
+            },
+            "steps": []
+          }
+        },
+        "645d80c1f245951e8730bed8": {
+          "type": "block",
+          "data": {
+            "name": "Fail",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d80c1f245951e8730bee0"
+            ]
+          },
+          "nodeID": "645d80c1f245951e8730bed8",
+          "coords": [
+            -222.6288141724624,
+            219.371933852732
+          ]
+        },
+        "645d80c1f245951e8730beda": {
+          "type": "block",
+          "data": {
+            "name": "API Call",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d80c1f245951e8730bee3"
+            ]
+          },
+          "nodeID": "645d80c1f245951e8730beda",
+          "coords": [
+            -616.1475219920557,
+            43.92007431671357
+          ]
+        },
+        "645d80c1f245951e8730bedc": {
+          "type": "block",
+          "data": {
+            "name": "Success",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d80c1f245951e8730bee7"
+            ]
+          },
+          "nodeID": "645d80c1f245951e8730bedc",
+          "coords": [
+            -223.7095681864207,
+            45.207734992561996
+          ]
+        },
+        "645d80c1f245951e8730bede": {
+          "type": "block",
+          "data": {
+            "name": "Welcome",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d80c1f245951e8730beea",
+              "645d80c1f245951e8730beed"
+            ]
+          },
+          "nodeID": "645d80c1f245951e8730bede",
+          "coords": [
+            -1001.0479160760318,
+            38.42594896862681
+          ]
+        },
+        "645d80c1f245951e8730bee0": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "u08yz372g",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Error"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d80c1f245951e8730bee1"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80c1f245951e8730bee0"
+        },
+        "645d80c1f245951e8730bee3": {
+          "type": "api",
+          "data": {
+            "name": "",
+            "url": "https://api.openai.com/v1/completions",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [],
+            "method": "POST",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "val": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "val": "Bearer <ADD API KEY HERE>"
+              }
+            ],
+            "content": "{\n  \"model\": \"text-davinci-003\",\n  \"prompt\": \"{last_utterance}\",\n  \"max_tokens\": 7,\n  \"temperature\": 0,\n  \"top_p\": 1,\n  \"n\": 1,\n  \"stream\": false,\n  \"logprobs\": null,\n  \"stop\": \"\\n\"\n}",
+            "mappings": [
+              {
+                "path": "response",
+                "var": "response"
+              }
+            ],
+            "bodyType": "rawInput",
+            "selectedAction": "Make a POST Request",
+            "selectedIntegration": "Custom API",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d80c1f245951e8730bee7",
+                  "id": "645d80c1f245951e8730bee5",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -450.14853888468815,
+                          197.66856098360233
+                        ]
+                      },
+                      {
+                        "point": [
+                          -419.9285388846881,
+                          197.66856098360233
+                        ]
+                      },
+                      {
+                        "point": [
+                          -419.9285388846881,
+                          124.70856098360252
+                        ]
+                      },
+                      {
+                        "point": [
+                          -389.7085388846883,
+                          124.70856098360252
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": "645d80c1f245951e8730bee0",
+                  "id": "645d80c1f245951e8730bee4",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -450.14853888468815,
+                          252.16856098360233
+                        ]
+                      },
+                      {
+                        "point": [
+                          -419.38853888468816,
+                          252.16856098360233
+                        ]
+                      },
+                      {
+                        "point": [
+                          -419.38853888468816,
+                          298.8685609836024
+                        ]
+                      },
+                      {
+                        "point": [
+                          -388.62853888468794,
+                          298.8685609836024
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80c1f245951e8730bee3"
+        },
+        "645d80c1f245951e8730bee7": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "vh8xb37hw",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "response",
+                        "name": "response",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d80c1f245951e8730bee8"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80c1f245951e8730bee7"
+        },
+        "645d80c1f245951e8730beea": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "xg77r3eyi",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "This flow captures a users question and sends it to the OpenAI API"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d80c1f245951e8730beed",
+                  "id": "645d80c1f245951e8730beeb"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80c1f245951e8730beea"
+        },
+        "645d80c1f245951e8730beed": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_utterance"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d80c1f245951e8730beda",
+                  "id": "645d80c1f245951e8730beee",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -835.0485388846881,
+                          212.42856098360232
+                        ]
+                      },
+                      {
+                        "point": [
+                          -808.0985388846883,
+                          212.42856098360232
+                        ]
+                      },
+                      {
+                        "point": [
+                          -808.0985388846883,
+                          70.91856098360233
+                        ]
+                      },
+                      {
+                        "point": [
+                          -781.1485388846883,
+                          70.91856098360233
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "645d80c1f245951e8730beef"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80c1f245951e8730beed"
+        },
+        "645d80e3f245951e8730bfab": {
+          "type": "block",
+          "data": {
+            "name": "Start Block",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d80e3f245951e8730bfb1",
+              "645d80e3f245951e8730bfb4"
+            ]
+          },
+          "nodeID": "645d80e3f245951e8730bfab",
+          "coords": [
+            -819.3265429697817,
+            67.92280860959261
+          ]
+        },
+        "645d80e3f245951e8730bfad": {
+          "type": "block",
+          "data": {
+            "name": "Option 2",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d80e3f245951e8730bfb9"
+            ]
+          },
+          "nodeID": "645d80e3f245951e8730bfad",
+          "coords": [
+            -405.86936185538286,
+            272.76782495391024
+          ]
+        },
+        "645d80e3f245951e8730bfaf": {
+          "type": "block",
+          "data": {
+            "name": "Option 1",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d80e3f245951e8730bfbc"
+            ]
+          },
+          "nodeID": "645d80e3f245951e8730bfaf",
+          "coords": [
+            -404.3501872787125,
+            37.526451345597025
+          ]
+        },
+        "645d80e3f245951e8730bfb1": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "929q734a2",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "How can I help you?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d80e3f245951e8730bfb4",
+                  "id": "645d80e3f245951e8730bfb2"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80e3f245951e8730bfb1"
+        },
+        "645d80e3f245951e8730bfb4": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "xr9vd34tj",
+                "name": "Path 1",
+                "actions": []
+              },
+              {
+                "id": "cl9vs34c7",
+                "name": "Path 2",
+                "actions": []
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "noMatch": null,
+            "noReply": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "645d80e3f245951e8730bfb5"
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "645d80e3f245951e8730bfaf",
+                  "id": "645d80e3f245951e8730bfb6",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -653.3265352328635,
+                          208.1728396647967
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -611.3382426737455,
+                          208.1728396647967
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -611.3382426737455,
+                          64.52657516223951
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -569.3499501146275,
+                          64.52657516223951
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "",
+                  "target": "645d80e3f245951e8730bfad",
+                  "id": "645d80e3f245951e8730bfb7",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -653.3265352328635,
+                          262.67285902304945
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -612.0979465355017,
+                          262.67285902304945
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -612.0979465355017,
+                          299.76805860663205
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -570.8693578381401,
+                          299.76805860663205
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "645d80e3f245951e8730bfb4"
+        },
+        "645d80e3f245951e8730bfb9": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "lu9tb340d",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Second Option"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d80e3f245951e8730bfba"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80e3f245951e8730bfb9"
+        },
+        "645d80e3f245951e8730bfbc": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "ky9ry343w",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "First Option"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d80e3f245951e8730bfbd"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80e3f245951e8730bfbc"
+        },
+        "645d810df245951e8730c06f": {
+          "type": "block",
+          "data": {
+            "name": "Other names",
+            "color": "#000000",
+            "steps": [
+              "645d810df245951e8730c077"
+            ]
+          },
+          "nodeID": "645d810df245951e8730c06f",
+          "coords": [
+            -205.57295111575513,
+            235.69244620931897
+          ]
+        },
+        "645d810df245951e8730c071": {
+          "type": "block",
+          "data": {
+            "name": "Use Logic to Route",
+            "color": "#000000",
+            "steps": [
+              "645d810df245951e8730c07a"
+            ]
+          },
+          "nodeID": "645d810df245951e8730c071",
+          "coords": [
+            -606.4933015861607,
+            76.0116960555282
+          ]
+        },
+        "645d810df245951e8730c073": {
+          "type": "block",
+          "data": {
+            "name": "Elon Musk",
+            "color": "#000000",
+            "steps": [
+              "645d810df245951e8730c07e"
+            ]
+          },
+          "nodeID": "645d810df245951e8730c073",
+          "coords": [
+            -206.82295111575513,
+            76.94244620931875
+          ]
+        },
+        "645d810df245951e8730c075": {
+          "type": "block",
+          "data": {
+            "name": "Capture Information",
+            "color": "#000000",
+            "steps": [
+              "645d810df245951e8730c081",
+              "645d810df245951e8730c084"
+            ]
+          },
+          "nodeID": "645d810df245951e8730c075",
+          "coords": [
+            -1018.103779132739,
+            74.60207113242325
+          ]
+        },
+        "645d810df245951e8730c077": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "1jabe34gf",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hello "
+                      },
+                      {
+                        "id": "name",
+                        "name": "name",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " !"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d810df245951e8730c078"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d810df245951e8730c077"
+        },
+        "645d810df245951e8730c07a": {
+          "type": "ifV2",
+          "data": {
+            "name": "If",
+            "expressions": [
+              {
+                "type": null,
+                "name": "If name is elon musk",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "equals",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "name"
+                      },
+                      {
+                        "type": "value",
+                        "value": "elon musk"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "noMatch": {
+              "type": "path",
+              "pathName": "All other names"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": "645d810df245951e8730c06f",
+                  "id": "645d810df245951e8730c07b",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -440.49316890459295,
+                          210.2616625507901
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -405.533023663163,
+                          210.2616625507901
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -405.533023663163,
+                          262.69243881980606
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -370.57287842173355,
+                          262.69243881980606
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "645d810df245951e8730c073",
+                  "id": "645d810df245951e8730c07c",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -440.49316890459295,
+                          155.76164185389405
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -406.15799298328466,
+                          155.76164185389405
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -406.15799298328466,
+                          103.94229128709912
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -371.8228170619768,
+                          103.94229128709912
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ],
+                    "event": {
+                      "type": "If name is elon musk"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "645d810df245951e8730c07a"
+        },
+        "645d810df245951e8730c07e": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "1jabe34gf",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Twitter is the best 🐦"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d810df245951e8730c07f"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d810df245951e8730c07e"
+        },
+        "645d810df245951e8730c081": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "s8a30349g",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "What is your name?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d810df245951e8730c084",
+                  "id": "645d810df245951e8730c082"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d810df245951e8730c081"
+        },
+        "645d810df245951e8730c084": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "name"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d810df245951e8730c071",
+                  "id": "645d810df245951e8730c085",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -852.1037428795312,
+                          214.85203404699405
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -811.798535755921,
+                          214.85203404699405
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -811.798535755921,
+                          103.01180808305344
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -771.4933286323107,
+                          103.01180808305344
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "645d810df245951e8730c086"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d810df245951e8730c084"
+        }
+      },
+      "diagramID": "64f65fb379c13137308d7f7f"
+    }
+  },
+  "variableStates": []
+}
